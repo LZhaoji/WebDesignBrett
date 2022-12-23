@@ -1,0 +1,31 @@
+.footer {
+    grid-area: footer;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 0;
+    padding: 0;
+    background-color: rgb(67, 196, 201);
+
+    list-style: none;
+}
+
+.footer__item {
+    text-align: center;
+}
+
+.footer__item:hover{
+    background-color: #fff;
+}
+.footer__link {
+    padding: 0 30px;
+}
+
+@media screen and (max-width: 44rem) {
+    .footer__menu {
+        flex-direction: column;
+    }
+}

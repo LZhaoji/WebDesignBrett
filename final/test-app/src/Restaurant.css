@@ -1,0 +1,54 @@
+/* import new font from google */
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+.rest__card{
+    display: flex;
+    border: 1px black solid;
+    background-color: #eee;
+    margin: 1rem;
+    background: inherit;
+    color: inherit;
+}
+
+.rest__card + .rest__card{
+    flex-direction: row;
+    
+}
+
+.rest__img {
+    aspect-ratio: 1/1;
+    height: fit-content;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+.rest__title{
+    font-family: Lora;
+    text-align: center;
+}
+
+.rest__para{
+    font-family: Cinzel;
+    margin: 0;
+}
+
+.rest__card:hover {
+    box-shadow:  1px 4px rgb(200,178,111);
+}
+
+@media screen and (max-width: 50rem) {
+    .rest__card{
+        display: block;
+        margin: 1rem;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .rest__img{
+        float: right;
+        margin-right: 0;
+    }
+}

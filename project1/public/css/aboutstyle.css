@@ -1,0 +1,42 @@
+p{
+    margin-top: 0;
+}
+
+.main__title{
+    
+    font-family: Lora;
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px;
+}
+
+.main__reference{
+    
+    font-size: 10px;
+    margin-top: 0;
+    border-top: 1px black solid;
+}
+
+.main__summary{
+    
+    font-family: Josefin Sans;
+    font-size: 17px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px;
+    margin-left: 30px;
+}
+
+.main__paragraph{
+    font-family: Noto Serif;
+    font-size: 17px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px;
+    margin-left: 30px;
+}
+

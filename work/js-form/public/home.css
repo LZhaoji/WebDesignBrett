@@ -1,0 +1,131 @@
+main{
+    grid-area: main;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap:0.5rem;
+    padding: 20px;
+}
+
+label{
+    margin-top: 50px;
+}
+
+.form__name,
+.form__email,
+.form__confirm-email{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+}
+
+.name,
+.email,
+.confirm-email{
+    grid-column: span 4;
+    justify-self: center;
+    font-size: x-large;
+}
+
+.form__name-valid,
+.form__email-valid,
+.form__confirm-email-valid{
+    grid-column: span 3;
+    border: 0;
+    margin: 0;
+    color: red;
+    text-align: center;
+}
+
+.form__name-input,
+.form__email-input,
+.form__confirm-email-input{
+    grid-column: span 5;
+}
+
+.form__checkbox{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 0.5rem;
+}
+
+.form__checkbox-check{
+    grid-column: span 3;
+    justify-self: end;
+}
+
+.checkbox{
+    grid-column: span 9;
+    justify-self: start;
+    font-size: larger;
+}
+
+.form__tier{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.tier{
+    grid-column: span 3;
+    font-size: larger;
+}
+
+.form__tier-check{
+    grid-column: span 9;
+}
+
+button{
+    grid-column: span 12;
+    height: 50px;
+    font-size: larger;
+}
+
+
+@media screen and (max-width:40rem) {
+    
+
+    .footer__item{
+        grid-column: span 12;
+    }
+
+    .name,
+    .email,
+    .confirm-email{
+        grid-column: span 12;
+        justify-self: start;
+    }
+
+    .form__name-input,
+    .form__email-input,
+    .form__confirm-email-input{
+        grid-column: span 12;
+        height: 39px;
+    }
+
+    .form__name-valid{
+        grid-column: span 12;
+    }
+
+    .form__checkbox-check{
+        grid-column: span 1;
+        justify-self: flex-start;
+    }
+
+    .checkbox{
+        grid-column: span 11;
+    }
+
+    .tier{
+        grid-column: span 12;
+    }
+
+    .form__tier-check{
+        grid-column: span 12;
+    }
+}

@@ -1,0 +1,11 @@
+Reference:
+1.logo image: 
+    url="https://unsplash.com/photos/iPCWM76wRrs"
+    location in this file="img/logo.png"
+2.card image:
+    url="https://unsplash.com/photos/NodtnCsLdTE"
+    url="https://unsplash.com/photos/7GX5aICb5i4"
+    url="https://unsplash.com/photos/yMSecCHsIBc"
+    url="https://unsplash.com/photos/7AIDE8PrvA0"
+    location in file="public/img/"
+    

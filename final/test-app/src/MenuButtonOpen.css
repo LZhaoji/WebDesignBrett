@@ -1,0 +1,53 @@
+.menu__button {
+    display: none;
+    border: 0;
+
+    padding: 2rem;
+    background: inherit;
+    align-self: center;
+    cursor: pointer;
+}
+
+.menu__button-dark {
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
+    color: inherit;
+}
+/* below CSS adapted from https://css.gg under the MIT License */
+.gg-menu {
+    transform: scale(var(--ggs,1));
+    align-self: center;
+}
+   
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px inherit;
+    background: currentColor;
+}
+   
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+}
+   
+.gg-menu::after {
+    top: 6px;
+} 
+
+
+@media screen and (max-width:  81.25rem) {
+
+    .menu__button {
+        display: flex;
+    }
+
+}

@@ -1,0 +1,99 @@
+
+.dialog{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    border: 1px dashed;
+    background: inherit;
+    color: inherit;
+}
+
+.dialog-close {
+    display: none;
+}
+
+#dialog::backdrop{
+    opacity: 0.8;
+}
+
+/* form css */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap:0.5rem;
+}
+
+label{
+    margin: 0 1rem;
+}
+
+.form__img {
+    filter: invert(80%);
+}
+
+.form__name,
+.form__password{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+}
+
+.name,
+.password{
+    grid-column: span 12;
+    justify-self: start;
+    font-size: 2rem;
+}
+
+.invalid {
+    grid-column: span 12;
+    display: initial;
+    border: 0;
+    margin: 0;
+    color: red;
+}
+
+.valid{
+    grid-column: span 12;
+    display: none;
+    border: 0;
+    margin: 0;
+    color: red;
+}
+
+.form__name-input,
+.form__password-input{
+    grid-column: span 12;
+}
+
+.form__link {
+    text-align: center;
+    color: gray;
+}
+
+.link__signup {
+    color: deepskyblue;
+    text-decoration: underline;
+}
+
+.form__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form__button-submit,
+.form__button-cancel{
+    border-radius: 50%;
+    font-size: x-large;
+}
+
+.form__button-submit{
+    background-color: greenyellow;
+}
+
+.form__button-cancel{
+    background-color: red;
+}

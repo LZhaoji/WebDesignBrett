@@ -1,0 +1,124 @@
+.gallery__box {
+    grid-area: carsouel;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery__box-navopen{
+    display: none;
+}
+
+.gallery {
+    grid-area: gallery;
+    width: 360px;
+    height: 240px;
+    border: 2px solid #999;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery__imglist {
+    margin: 0;
+    padding: 0;
+    width: 2520px;
+    height: 240px;
+    transition: margin-left ease 2s;
+}
+
+.gallery__img {
+    float: left;
+}
+
+.imglist img {
+    width: 360px;
+    height: 240px;
+}
+
+.gallery__button {
+    grid-area: gallery__button;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.7rem;
+}
+
+.gallery__button-good {
+    padding: 1.3rem;
+    cursor: pointer;
+}
+
+.gallery__button-bad {
+    padding: 1.3rem;
+    cursor: pointer;
+}
+
+.gallery__button-clean {
+    padding: 1.3rem;
+    padding-top: 1.43rem;
+}
+
+.gallery__count {
+    grid-area: gallery__count;
+    text-align: center;
+}
+
+.count-good {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: deeppink;
+}
+
+.count-bad {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: dodgerblue;
+}
+
+.choise__box {
+    grid-area: choise__box;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.choise__ins {
+    grid-column: span 6;
+    margin-left: 50%;
+    border: inset 1px deeppink;
+}
+
+
+.choise__notins {
+    grid-column: span 4;
+    margin-left: 20%;
+    border: inset 1px dodgerblue;
+}
+
+
+.item {
+    list-style: inside;
+}
+
+@media screen and (max-width: 81.25rem) {
+    .choise__ins {
+        grid-column: span 6;
+        margin-left: 20%;
+    }
+    
+    .choise__notins {
+        grid-column: span 5;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 44rem) {
+    .choise__ins {
+        grid-column: span 11;
+        margin-left: 10%;
+    }
+    
+    .choise__notins {
+        grid-column: span 11;
+        margin-left: 10%;
+    }
+}
+

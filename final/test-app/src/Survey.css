@@ -1,0 +1,18 @@
+.survey__box {
+    display: grid;
+    grid-template-areas: 
+        "survey__dis"
+        "carsouel"
+        "gallery__button"
+        "gallery__count"
+        "choise__box"
+    ;
+    grid-template-rows: auto 1fr auto auto auto;
+    width: 100vw;
+}
+
+.survey__dis {
+    grid-area: survey__dis;
+    padding: 1rem;
+    text-align: center;
+}

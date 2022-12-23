@@ -1,0 +1,74 @@
+/* dialog css */
+.register__form{
+    padding: 0.5rem;
+    border: 1px dashed;
+}
+
+.register__form::backdrop{
+    background-color: black;
+    opacity: 0.6;
+}
+
+/* form css */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap:0.5rem;
+}
+
+label{
+    margin: 0 1rem;
+}
+
+.form__name,
+.form__email,
+.form__confirm-email{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+}
+
+.name,
+.email,
+.confirm-email{
+    grid-column: span 12;
+    justify-self: start;
+}
+
+.form__name-valid,
+.form__email-valid,
+.form__confirm-email-valid{
+    grid-column: span 12;
+    border: 0;
+    margin: 0;
+    color: red;
+}
+
+.form__name-input,
+.form__email-input,
+.form__confirm-email-input{
+    grid-column: span 12;
+}
+
+.form__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form__button-submit,
+.form__button-cancel{
+    border-radius: 50%;
+    font-size: x-large;
+}
+
+.form__button-submit{
+    background-color: greenyellow;
+}
+
+.form__button-cancel{
+    background-color: red;
+}
+

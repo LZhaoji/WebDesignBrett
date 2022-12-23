@@ -1,0 +1,56 @@
+.menu__button-close {
+    display: none;
+    border: 0;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    align-items: center;
+    background: inherit;
+    cursor: pointer;
+}
+
+.menu__button-close-dark {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    color: inherit;
+}
+
+/* below CSS adapted from https://css.gg under the MIT License */
+.gg-close {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 40px
+}
+   
+.gg-close::after,
+.gg-close::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    border-radius: 5px;
+    top: 8px;
+    left: 1px
+}
+   
+.gg-close::after {
+    transform: rotate(-45deg)
+} 
+
+@media screen and (max-width:  81.25rem) {
+
+    .menu__button-close {
+        display: flex;
+        border: 0;
+    }
+
+}

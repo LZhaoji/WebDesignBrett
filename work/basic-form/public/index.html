@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Register Cat's Home</title>
+</head>
+<body>
+    <div id="root">
+        <header class="header">
+            <img class="header__logo" src="http://placekitten.com/100/100?image=2">
+            <h1 class="header__title">Cat Lover</h1>
+        </header>
+        <nav class="globalnav">
+            <ul class="globalnav__menu">
+                 <li class="globalnav__dropdown">
+                    <button class="globalnav__button">Cat's Self-Introduce</button>
+                    <ul class="globalnav__submenu">
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 1</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 2</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 3</a></li>
+                    </ul>
+                 </li>
+                 <li class="globalnav__dropdown">
+                    <button class="globalnav__button">Cats' Picture</button>
+                    <ul class="globalnav__submenu">
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 1</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 2</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 3</a></li>
+                    </ul>
+                </li>
+                <li class="globalnav__dropdown">
+                    <button class="globalnav__button">Join us</button>
+                    <ul class="globalnav__submenu">
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 1</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 2</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <form class="form" action="/submit" method="post">
+                <!--  -->
+                <label class="form__name">
+                    <!--  -->
+                    <span class="name">name: </span>
+                    <!--  -->
+                    <input class="form__name__input" type="text" name="usrName" placeholder="Please enter your name" required>
+                </label>
+                <!--  -->
+                <label class="form__email">
+                    <!--  -->
+                    <span class="email">email: </span>
+                    <!--  -->
+                    <input class="form__email__input" type="text" name="usrEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Please enter your email" required>
+                </label>
+                <!--  -->
+                <!-- <label > -->
+                    <!--class="advertise"  -->
+                    <!-- <span >Do you want us to send you annoying emails?</span> -->
+                    <!-- class="form__advertise__True" -->
+                <label class="form__checkbox">
+                    <input class="form__checkbox__check" type="checkbox" name="annoy_me" value="True" checked>
+                    <span class="checkbox">Yes! I want a mailbox full of messages I will not read</span>
+                </label>
+                    <!--class="form__advertise__False"  -->
+                <!-- </label> -->
+                <!--  -->
+                <label class="form__tier">
+                    <span class="tier">Which Tier do you want?</span>
+                    <select class="form__tier__check" name="tier" required>
+                        <option value="">Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </label>
+                <button type="submit">Register</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Join Us</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

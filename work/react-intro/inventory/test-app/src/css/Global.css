@@ -1,0 +1,9 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+.root{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,19 @@
+.main {
+    grid-area: main;
+    margin-bottom: 1px;
+}
+
+.main-navopen {
+    display: none;
+}
+
+.light {
+    background: #fff;
+    color: #333;
+}
+  
+.dark {
+    background: #333;
+    color: rgb(228, 221, 221);
+}
+  

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+.famous-card{
+    display: flex;
+    border: 1px black solid;
+    background-color: #eee;
+}
+
+.famous-card + .famous-card{
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.famous-card:first-child{
+    flex-direction: row-reverse;
+    margin: 1rem 1rem 2rem;
+}
+
+.famous-card__img-twins{
+    aspect-ratio: 1/1;
+    height: fit-content;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+.famous-card__img-triple{
+    aspect-ratio: 1/1;
+    height: fit-content;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+.famous-card__title{
+    font-family: Lora;
+    text-align: center;
+}
+
+.famous-card__para{
+    font-family: Cinzel;
+    margin: 0;
+}
+
+@media screen and (max-width: 44rem) {
+    .famous-card{
+        display: block;
+    }
+
+    .famous-card + .famous-card{
+        flex-direction: row;
+        margin: 0rem;
+    }
+    
+    .famous-card:first-child{
+        flex-direction: row-reverse;
+        margin: 0;
+        border-bottom: none;
+    }
+
+    .famous-card__img-twins{
+        float: right;
+    }
+    
+    .famous-card__img-triple{
+        float: left;
+    }
+}

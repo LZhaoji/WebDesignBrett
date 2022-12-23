@@ -1,0 +1,160 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #EEF3E4;
+}
+
+#root{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer"
+    ;
+    height: 100%;
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    
+    background-color: #C58686;
+}
+
+.header__logo{
+    grid-column: span 2;
+
+    vertical-align: top;
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+
+.header__title{
+    grid-column: span 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    font-size: 3vw;
+}
+
+.nav{
+    grid-area: nav;
+    margin: 1px;
+}
+
+.globalnav__menu{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:0.1rem;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.globalnav__dropdown{
+    grid-column: span 4;
+    position: relative;
+
+    background-color: #AFB4C0;
+    text-align: center;
+}
+
+.globalnav__button{
+    border: none;
+    padding: 0;
+    background-color: inherit;
+
+    width: -webkit-fill-available;
+    
+    color: #44506F;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.globalnav__link{
+    display: flex;
+    line-height: 50px;
+    color: #44506F;
+    text-decoration: none;
+}
+
+.globalnav__submenu{
+    position: absolute;
+
+    background-color: inherit;
+    
+    padding: 0;
+    margin: 0;
+    transform: rotateX(0deg);
+    transition: transform 1s;
+    width: -webkit-fill-available;
+
+    overflow: hidden;
+    list-style: none;
+}
+
+.globalnav__submenu-onclick{
+    transform: rotateX(-90deg);
+}
+
+.globalnav__subitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border-top: 1px #44506F solid;
+}
+
+.globalnav__item{
+    color: #44506F;
+    text-decoration: none;
+}
+
+
+.footer{
+    grid-area: footer;
+    background-color: #C58686;
+}
+
+.footer__menu{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 0.1rem;
+
+    padding: 0;
+    margin: 0;
+
+    
+    list-style: none;
+}
+
+.footer__item{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer__link{
+    color: #BBC2C7;
+}
+
+@media screen and (max-width:40rem) {
+    
+    .footer__item{
+        grid-column: span 12;
+    }
+}

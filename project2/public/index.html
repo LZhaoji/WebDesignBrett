@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/globalstyle.css">
+    <link rel="stylesheet" href="./css/homestyle.css">
+    <link rel="stylesheet" href="./css/dialog.css">
+    <!-- below CSS adapted from https://css.gg under the MIT License -->
+    <link href='https://css.gg/menu.css' rel='stylesheet'>
+    <script src="./js/home.js" defer></script>
+    <script src="./js/global.js" defer></script>
+    <title>Cat's Lover</title>
+</head>
+<body>
+    <a class="skiplink" href="#main" aria-label="click and go into main">Skip to Content</a>
+
+    <div id="root">
+        <div class="header-nav">
+            <header class="header">
+                <a href="./index.html" aria-label="click and go into main"><img class="header__logo" src="./img/catImage_Logo.jpeg" alt="check and go to homepage" aria-label="chech and back to homepage"></a>
+                <h1 class="header__title">Cat Lover</h1>
+            </header>
+            <nav class="nav">
+                <ul class="globalnav__menu">  
+                    <button type="button" class="globalnav__button"><i class="gg-menu"></i>Menu</button>
+                    <ul class="close globalnav__dropdown ">
+                        <li class="globalnav__item"><a class="globalnav__link" href="./index.html" aria-label="check and go to homepage">Home</a></li>
+                        <li class="globalnav__item"><a class="globalnav__link" href="./about.html" aria-label="introduce famous cats">Famous Cats</a></li>
+                        <li class="globalnav__item"><a class="globalnav__link" href="#" aria-label="it's a fake link">Cat Event</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+        <main id="main">
+            <div class="cards">
+                <div class="card">
+                    <img class="card__img" src="./img/catImage_Shy.jpeg" alt="It's a shy cat,check it">
+                    <h2 class="card__title">A little shy cat</h3>
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe blanditiis quam commodi voluptatum soluta, magni, quis odio rem dolore fuga ratione, voluptates excepturi!<button type="button" class="card__cta" aria-label="click and register our member">Subscribe</button> Nihil quaerat nobis velit molestias doloribus?</div>
+                    
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./img/catImage_Tiny.jpeg" alt="It's a tiny cat,check it">
+                    <h2 class="card__title">A tiny cat</h3>
+                    <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ea, commodi amet sunt ad, laborum facilis debitis nam deleniti magnam minus? <button type="button" class="card__cta" aria-label="click and register our member">Subscribe</button>Porro vitae labore quasi incidunt, saepe eos non vel.</div>
+                    
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./img/catImage_Funny.jpeg" alt="It's a funny cat,check it">
+                    <h2 class="card__title">A funny cat</h3>
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptatibus exercitationem perferendis porro error iste, dolorem a soluta tenetur excepturi delectus quod maiores. Dignissimos, voluptate!<button type="button" class="card__cta" aria-label="click and register our member">Subscribe</button> Sed autem nesciunt qui nostrum.</div>
+                    
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./img/catImage_Lovly.jpeg" alt="It's a Lovely cat,check it">
+                    <h2 class="card__title">A lovely cat</h3>
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veniam earum repellat ipsam praesentium harum eveniet mollitia obcaecati repellendus eum!<button type="button" class="card__cta" aria-label="click and register our member">Subscribe</button> Laudantium unde hic ea error placeat, officiis pariatur corporis ad?</div>
+                    
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./img/catImage_Clever.jpeg" alt="It's a clever cat,check it">
+                    <h2 class="card__title">A clever cat</h3>
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veniam earum repellat ipsam praesentium harum eveniet mollitia obcaecati repellendus eum!<button type="button" class="card__cta" aria-label="click and register our member">Subscribe</button> Laudantium unde hic ea error placeat, officiis pariatur corporis ad?</div>
+                    
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./img/catImage_Cute.jpeg" alt="It's a cute cat,check it">
+                    <h2 class="card__title">A cute cat</h3>
+                    <div class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veniam earum repellat ipsam praesentium harum eveniet mollitia obcaecati repellendus eum!<button type="button" class="card__cta" aria-label="click and register our member">Subscribe</button> Laudantium unde hic ea error placeat, officiis pariatur corporis ad?</div>
+                    
+                </div>
+                <dialog class="register__form">
+                    <form class="form" action="/subscribe" method="post">
+                        <h2>Fellow us!Get the lastest cats'news.</h2>
+                        <label class="form__name">
+                            <span class="name">name: *required</span>
+                            <input class="form__name-input " type="text" name="userName" placeholder="Please enter your name">
+                            <div class="form__name-valid">Please input a name</div>
+                        </label>
+        
+                        <label class="form__email">
+                            <span class="email">email: *required</span>
+                            <input class="form__email-input" type="text" name="userEmail" placeholder="Please enter your email">
+                            <div class="form__email-valid"></div>
+                        </label>
+        
+                        <label class="form__confirm-email">
+                            <span class="confirm-email">confirm email: *required</span>
+                            <input class="form__confirm-email-input" type="text" name="userConfirmEmail" placeholder="Repeat your email">
+                            <div class="form__confirm-email-valid"></div>
+                        </label>
+                        
+                        <div class="form__button">
+                            <button class="form__button-submit" type="submit">Register</button>
+                            <button class="form__button-cancel" type="button">Cancel</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+        </main>
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="footer__item"><a class="footer__link" href="#" aria-label="check privacy policy">Privacy Policy</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#" aria-label="check and join us">Join Us</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#" aria-label="chech and contack us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.outer {
+    grid-area: outer;
+    padding-top: 2rem; 
+    padding-left: 2rem;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    border-left: 2px solid #e0e0e0;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 81.25rem) {
+    .tools {
+        border-left: 0;
+        justify-content: space-evenly;
+    }
+}

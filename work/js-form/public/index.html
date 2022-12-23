@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./global.css" rel="stylesheet">
+    <link href="./home.css" rel="stylesheet">
+    <script src="./global.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <div id="root">
+        <header class="header">
+            <a href="./index.html"><img class="header__logo" src="./img/logo.png" alt="logo image"></a>
+            <h1 class="header__title">Cat Lover</h1>
+        </header>
+        <nav class="nav">
+            <ul class="globalnav__menu">
+                <li class="globalnav__dropdown">
+                    <button class="globalnav__button">Home</button>
+                    <ul class="globalnav__submenu globalnav__submenu-onclick">
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 1</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 2</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 3</a></li>
+                    </ul>
+                 </li>
+                 <li class="globalnav__dropdown">
+                    <button class="globalnav__button">About Cats</button>
+                    <ul class="globalnav__submenu globalnav__submenu-onclick">
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 1</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 2</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 3</a></li>
+                    </ul>
+                 </li>
+                 <li class="globalnav__dropdown">
+                    <button class="globalnav__button">Register</button>
+                    <ul class="globalnav__submenu globalnav__submenu-onclick">
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 1</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 2</a></li>
+                        <li class="globalnav__subitem"><a class="globalnav__item" href="#">ITEM 3</a></li>
+                    </ul>
+                 </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <form class="form" action="/register" method="post">
+                
+                <label class="form__name">
+                    <span class="name">name: </span>
+                    <input class="form__name-input " type="text" name="userName" placeholder="Please enter your name">
+                    <div class="form__name-valid">Please input a valid name</div>
+                </label>
+
+                <label class="form__email">
+                    <span class="email">email: </span>
+                    <input class="form__email-input" type="text" name="userEmail" placeholder="Please enter your email">
+                    <div class="form__email-valid"></div>
+                </label>
+
+                <label class="form__confirm-email">
+                    <span class="confirm-email">confirm email: </span>
+                    <input class="form__confirm-email-input" type="text" name="userConfirmEmail" placeholder="Repeat your email">
+                    <div class="form__confirm-email-valid"></div>
+                </label>
+                
+                <label class="form__checkbox">
+                    <input class="form__checkbox-check" type="checkbox" name="wants-spam" value="True" checked>
+                    <span class="checkbox">Yes! I want a mailbox full of messages I will not read</span>
+                </label>
+
+                <label class="form__tier">
+                    <span class="tier">Which Tier do you want?</span>
+                    <select class="form__tier-check" name="tier">
+                        <option value="">Please select</option>
+                        <option value="1">Silver Tier</option>
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </label>
+
+                <button type="submit">Register</button>
+            </form>
+        </main>
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Join Us</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

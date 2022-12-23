@@ -1,0 +1,33 @@
+
+.nav__submenu__item {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.nav__submenu__item-dark {
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.nav__submenu__item + .nav__submenu__item {
+    border-top: none;
+}
+
+.nav__submenu__link {
+    white-space: pre;
+    color: inherit;
+    cursor: pointer;
+}
+
+.nav__submenu__item:hover .nav__submenu__link,
+.nav__submenu__item .nav__submenu__link:hover {
+    border-bottom: 2px solid red;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 81.25rem) {
+
+    .nav__submenu__item {
+        border: none;
+    }
+}

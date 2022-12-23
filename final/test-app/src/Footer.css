@@ -1,0 +1,43 @@
+.footer {
+    grid-area: footer;
+    border-top: 1px solid;
+    color: inherit;
+    background: inherit;
+}
+
+.footer-navopen {
+    display: none;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer__menu div {
+    padding: 0 2px;
+}
+
+.footer__item {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.footer__item:hover {
+    border-bottom: 2px red solid;
+}
+
+.footer__link {
+    padding: 0 30px;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 44rem) {
+    .footer__menu {
+        flex-direction: column;
+    }
+}
